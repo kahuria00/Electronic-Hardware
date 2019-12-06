@@ -1,8 +1,8 @@
 
 
-int redled=8;
+int redled=11;
 int greenled=10;
-int orangeled=12;
+int orangeled=6;
 int button=2;
 int buttonValue=0;
 

@@ -24,15 +24,15 @@ delay(1000);
 
 }
 
-else{
-  digitalWrite(greenled,HIGH);
-  delay(1000);
-  digitalWrite(greenled,LOW);
-  delay(1000);
-  
-  
-  
-}
+//else{
+//  digitalWrite(greenled,HIGH);
+//  delay(1000);
+//  digitalWrite(greenled,LOW);
+//  delay(1000);
+//  
+//  
+//  
+//}
 
 
 

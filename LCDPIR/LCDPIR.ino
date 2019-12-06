@@ -18,9 +18,7 @@ void loop() {
                 if(motion==HIGH){
                 
               lcd.setCursor(0,0);// first row
-              lcd.print("Motion detected   "); //displays on LCD
-              lcd.print(analogRead(motion)); //print the read value from the PIR sensor
-
+              lcd.print("Motion detected   "); //displays on Lcd
               delay(500);
               }
  

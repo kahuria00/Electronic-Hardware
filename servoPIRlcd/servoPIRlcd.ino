@@ -5,7 +5,7 @@ LiquidCrystal lcd (7,8,9,10,11,12);
 
 
 
-int pir= 10; 
+int pir= 6; 
 int readValue;
 
 void setup() {
@@ -13,16 +13,19 @@ void setup() {
                 lcd.clear();
   
                 
-                  myservo.attach(6); 
+                  myservo.attach(5); 
                   pinMode(pir, INPUT);
                   
 }
 void loop() {
-  readValue = analogRead(pir);
-  
+  readValue = digitalRead(pir);
+  lcd.setCursor(0,0);
   if(readValue==HIGH){
   myservo.write(90);
   delay(1000);
+
+  lcd.print("Value =  "); 
+ lcd.print(analogRead(readValue)); 
   
   }
   
@@ -33,11 +36,7 @@ void loop() {
 
 }
 
-              lcd.setCursor(0,0);// first row
-              lcd.print("Motion  dectected   "); //displays on LCD
-              lcd.print(analogRead(pir)); //print the read value from the ultrasonic sensor
-
-              delay(500);
+              
 
 }
 
